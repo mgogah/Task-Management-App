@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginRegisterController;
+use App\Http\Controllers\TasksController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -15,3 +16,5 @@ Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/home', 'home')->name('home');
     Route::post('/logout', 'logout')->name('logout');
 });
+
+Route::resource('tasks', TasksController::class);
