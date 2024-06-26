@@ -72,9 +72,10 @@ class LoginRegisterController extends Controller implements HasMiddleware
 
     }
     
-    public function home(): View
+    public function home()
     {
-        return view('auth.home');
+       // return view('auth.home');
+       return redirect('/tasks');
     } 
     
     public function logout(Request $request): RedirectResponse

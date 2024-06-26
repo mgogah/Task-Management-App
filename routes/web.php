@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginRegisterController;
 use App\Http\Controllers\TasksController;
+use App\Livewire\ShowTasks;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,3 +19,5 @@ Route::controller(LoginRegisterController::class)->group(function() {
 });
 
 Route::resource('tasks', TasksController::class);
+
+Route::get('/show/tasks', ShowTasks::class);
