@@ -7,7 +7,7 @@ use App\Livewire\ShowTasks;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('root');
 
 Route::controller(LoginRegisterController::class)->group(function() {
     Route::get('/register', 'register')->name('register');

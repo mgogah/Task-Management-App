@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel 11 Custom User Registration & Login Tutorial - AllPHPTricks.com</title>
+    <title>Task Management Application</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     @livewireStyles
 </head>
@@ -19,6 +19,9 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
                 @guest
+                <li class="nav-item">
+                    <a class="nav-link {{ (request()->is('home')) ? 'active' : '' }}" href="{{ route('root') }}">Home</a>
+                </li>
                     <li class="nav-item">
                         <a class="nav-link {{ (request()->is('login')) ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
                     </li>

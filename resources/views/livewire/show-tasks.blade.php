@@ -1,7 +1,7 @@
 <div class="row justify-content-center mt-5">
     <div class="col-md-12">
-        <select wire:model.live="searchTasks" class=""> 
-            <option value="2">All Tasks</option>
+        <select wire:model.live="searchTasks" class="border p-1 text-slate-600 text-lg rounded mb-2"> 
+            <option value="3">All Tasks</option>
                 <option value="1">Completed</option>
                 <option value="0">Uncompleted</option>
         </select>
@@ -12,12 +12,13 @@
                         <th scope="col">Title</th>
                         <th scope="col">Description</th>
                         <th scope="col">Completed</th>
+                        <th scope="col">Operatins</th>
                       </tr>
                     </thead>
                     <tbody>
                         @forelse ($tasks as $task)
                         <tr>
-                            <th scope="row">{{ $loop->iteration }}</th>
+                            <td scope="row">{{ $loop->iteration }}</td>
                             <td><p class="{{ ($task->completed) ? "text-decoration-line-through" : "" }}">{{ $task->title }}</p></td>
                             <td><p class="{{ ($task->completed) ? "text-decoration-line-through" : "" }}">{{ $task->description }}</p></td>
                             <td>{{ ($task->completed) ? "Yes" : "No" }}</td>

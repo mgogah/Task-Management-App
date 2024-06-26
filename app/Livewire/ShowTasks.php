@@ -11,23 +11,24 @@ use Livewire\Attributes\Title;
 class ShowTasks extends Component
 {
     use WithPagination;
+    protected $paginationTheme = 'bootstrap';
 
-    public int $searchTasks=2;
+    public int $searchTasks=3;
     public int $userID;
 
     public function render()
     {   $this->userID = Auth::user()->id;
-      
-        if($this->searchTasks == 1){
-            $tasks = Tasks::where([['completed','=',1], ['user_id',"=", $this->userID]])->paginate(2);
-        }
-        else if($this->searchTasks == 0){
-            $tasks = Tasks::where([['completed','=',0], ['user_id',"=", $this->userID]])->paginate(2);
-        }
-        else{
-            $tasks = Tasks::where('user_id', $this->userID)->paginate(25);
-        }
+        $tasks = '';
 
+        switch($this->searchTasks){
+             case 0: 
+                $tasks = Tasks::where([['completed','=',0], ['user_id',"=", $this->userID]])->paginate(25);break;
+             case 1:
+                $tasks = Tasks::where([['completed','=',1], ['user_id',"=", $this->userID]])->paginate(25);break;
+             default:
+             $tasks = Tasks::where('user_id', $this->userID)->paginate(25);
+        }
+      
         return view('livewire.show-tasks', [ 'tasks' => $tasks]);
     }
 
