@@ -1,149 +1,141 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تفصيل - إدارة المهام والtasks</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-   <style>
-    .hero-section {
-    background-image: linear-gradient(to bottom, #3498db, #2980b9);
-    background-size: 100% 300px;
-    background-position: 0% 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    direction: rtl;
-}
+@extends('layouts.app')
 
-.hero-section h1 {
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.feature-box {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    direction: rtl;
-}
-
-.feature-box i {
-    font-size: 36px;
-    margin-bottom: 10px;
-    color: #3498db;
-}
-
-.testimonial-carousel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    direction: rtl;
-}
-
-.testimonial {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin: 20px;
-    width: 250px;
-    direction: rtl;
-}
-
-.testimonial img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.cta-section {
-    background-color: #3498db;
-    padding: 40px;
-    text-align: center;
-    color: #fff;
-    direction: rtl;
-}
-
-.cta-section h2 {
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.footer-section {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
-    color: #fff;
-    direction: rtl;
-}
-   </style>
-</head>
-<body>
-    <!-- Hero Section -->
-    <section class="hero-section">
+@section('content')
+<main>
+    <section class="hero">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h1 class="display-3">تفصيل</h1>
-                    <p class="lead">إدارة المهام والtasks بسهولة ويسر مع تطبيق تفصيل</p>
-                    <button class="btn btn-primary btn-lg">开始 استخدام تفصيل</button>
-                </div>
-            </div>
+            <h1>تفصيل التحكم في المهام</h1>
+            <p>مديرة وتنظيم وادارة المهام الخاصة بك</p>
+            <a href="#" class="btn btn-primary">ابدأ الاستخدام الآن</a>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features-section bg-light">
+    <section class="features" id="features">
         <div class="container">
-            <div class="row justify-content-center">
+            <h2>مميزات تفصيل</h2>
+            <div class="row">
                 <div class="col-md-4">
-                    <div class="feature-box">
-                        <i class="fas fa-list-ul fa-3x"></i>
-                        <h3>إدارة المهام</h3>
-                        <p>إدارة المهام والtasks بسهولة ويسر مع تفصيل</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-box">
-                        <i class="fas fa-clock fa-3x"></i>
-                        <h3>تتبع الوقت</h3>
-                        <p>تتبع الوقت المستهلك في كل مهمة لتحسين الأداء</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-box">
-                        <i class="fas fa-user fa-3x"></i>
-                        <h3>تعاون الفريق</h3>
-                        <p>تعاون الفريق والعمل الجماعي مع تفصيل</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h2>ما يقوله مستخدمونا</h2>
-                    <p class="lead">لا تقلق، نحن لدينا شواهد من مستخدمينا السعداء</p>
-                    <div class="testimonial-carousel">
-                        <div class="testimonial">
-                            <img src="https://via.placeholder.com/50x50" alt="User Avatar">
-                            <p>"تفصيل změn حياتي! الآن أستطيع إدارة مهامي بسهولة ويسر."</p>
-                            <h5>- أحمد محمد، مدير مشروع</h5>
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-list"></i>
                         </div>
-                        <div class="testimonial">
-                            <img src="https://via.placeholder.com/50x50" alt="User Avatar">
-                            <p>"تفصيل هو الحل الأمثل لإدارة المهام والtasks. أصبحنا أكثر كفاءة معه."</p>
-                            <h5>- فاطمة علي، مدير فريق</h5>
+                        <h3>التنظيم</h3>
+                        <p>تنظيم المهام الخاصة بك والتقليل من التأخيرات</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h3>التصنيف</h3>
+                        <p>تصنيف المهام حسب الأهداف والمواقف الحالية</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>التواريخ</h3>
+                        <p>تحديد المهلة النهاية لكل مهمة والحصول على تنبيهات</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-sort-amount-up"></i>
+                        </div>
+                        <h3>الترتيب</h3>
+                        <p>ترتيب المهام حسب الأهمية والأولوية</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3>التحكم في الوصول</h3>
+                        <p>إدارة الوصول للمهام والمستخدمين</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <h3>التنبيهات</h3>
+                        <p>تحديد التنبيهات عند تجاوز المهلة أو الإضافة للمهام</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>التسعير</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="header">
+                            <h3>البسيط</h3>
+                            <p>بداية ممتازة</p>
+                        </div>
+                        <div class="price">
+                            <span>مجاني</span>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 5 مهام</li>
+                                <li><i class="fas fa-check"></i> 2 فئة</li>
+                                <li><i class="fas fa-check"></i> 1 مستخدم</li>
+                            </ul>
+                        </div>
+                        <div class="button">
+                            <a href="#" class="btn btn-primary">اشترِ الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="header">
+                            <h3>المتوسط</h3>
+                            <p>حل كامل للمهام</p>
+                        </div>
+                        <div class="price">
+                            <span>10 ريال شهريًا</span>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> 25 مهام</li>
+                                <li><i class="fas fa-check"></i> 5 فئة</li>
+                                <li><i class="fas fa-check"></i> 3 مستخدم</li>
+                            </ul>
+                        </div>
+                        <div class="button">
+                            <a href="#" class="btn btn-primary">اشترِ الآن</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-card">
+                        <div class="header">
+                            <h3>المتقدم</h3>
+                            <p>تنظيم المهام بشكل تفصيلي</p>
+                        </div>
+                        <div class="price">
+                            <span>20 ريال شهريًا</span>
+                        </div>
+                        <div class="features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> مهام غير محدودة</li>
+                                <li><i class="fas fa-check"></i> 10 فئة</li>
+                                <li><i class="fas fa-check"></i> مستخدمين غير محدودين</li>
+                            </ul>
+                        </div>
+                        <div class="button">
+                            <a href="#" class="btn btn-primary">اشترِ الآن</a>
                         </div>
                     </div>
                 </div>
@@ -151,34 +143,101 @@
         </div>
     </section>
 
-    <!-- Call-to-Action Section -->
-    <section class="cta-section">
+    <section class="testimonials" id="testimonials">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h2>جرب تفصيل الآن!</h2>
-                    <p class="lead">سجل الآن واكتشف كيف يمكن أن يغير تفصيل طريقة عملك</p>
-                    <button class="btn btn-primary btn-lg">سجل الآن</button>
+            <h2>شهادات العملاء</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial">
+                                    <p>تفصيل هو التطبيق المثالي لتنظيم المهام الخاصة بي. يساعدني في التنظيم والتحكم في المهام بكل سهولة.</p>
+                                    <div class="author">
+                                        <img src="https://via.placeholder.com/50" alt="User">
+                                        <span>محمد علي</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial">
+                                    <p>لقد كان تجربتي مع تفصيل تجربة ممتازة. يتيح لي تحديد المهلة والترتيب للمهام بسهولة.</p>
+                                    <div class="author">
+                                        <img src="https://via.placeholder.com/50" alt="User">
+                                        <span>عمرة عبدالله</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial">
+                                    <p>تم تحسين ادائي بشكل كبير من خلال استخدام تفصيل. يساعدني في التنظيم والادارة للمهام بكل سهولة.</p>
+                                    <div class="author">
+                                        <img src="https://via.placeholder.com/50" alt="User">
+                                        <span>أحمد علي</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">السابق</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">التالي</span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer-section">
+    <section class="contact" id="contact">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <p>&copy; {{ now()->year }} تفصيل. جميع الحقوق محفوظة.</p>
+            <h2>اتصل بنا</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">الاسم</label>
+                            <input type="text" class="form-control" id="name" placeholder="أدخل اسمك">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" placeholder="أدخل بريدك الإلكتروني">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">الرسالة</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">ارسل</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h3>معلومات الاتصال</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> عنوان مكتبنا</li>
+                            <li><i class="fas fa-phone"></i> رقم الهاتف: 123456789</li>
+                            <li><i class="fas fa-envelope"></i> البريد الإلكتروني: info@tafseel.com</li>
+                        </ul>
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+</main>
 
-    <!-- Custom JavaScript -->
-    <script src="script.js"></script>
 
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+
+@endsection
