@@ -37,13 +37,14 @@ Tafseel is a web-based task management application that helps you organize and p
 ### Installation
 
 1. Clone the repository: `git clone https://github.com/mgogah/Task-Management-App.git`
-2. Install Required packages: `composer install`
-3. Install dependencies: `npm install`
-4. Create .env file By Renaming .env.example to .env
-5. Generate key: `php artisan key:generate`
-6. Linking storage `php artisan storage:link`
-7. Creating DB: `php artisan migrate`
-8. Run the server: `php artisan serve`
+2. Enter to Task-Management-App folder
+3. Install Required packages: `composer install`
+4. Install dependencies: `npm install`
+5. Create .env file By Renaming .env.example to .env
+6. Generate key: `php artisan key:generate`
+7. Linking storage `php artisan storage:link`
+8. Creating DB: `php artisan migrate`
+9. Run the server: `php artisan serve`
 
 ### DB Configuration
 
