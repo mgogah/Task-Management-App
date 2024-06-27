@@ -1,74 +1,86 @@
 # Tafseel (تفصيل)
-> Tafseel هو نظام إدارة مهام ويب مفتوح المصدر يسمح لك بتحديد المهام والتحكم بها بسهولة. باستخدام Tafseel، يمكنك تنظيم مهامك وفرقك وتتبع التقدم والوصول إلى أهدافك بسهولة.
+=====================
+#### Task Management Web Application
 
+[![Build Status](https://travis-ci.org/your-username/tafseel.svg?branch=master)](https://travis-ci.org/your-username/tafseel)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![Laravel Version][laravel-image]][laravel-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][laravel-downloads]][laravel-url]
+## About Tafseel
+---------------
 
-الميزات
-إدارة المهام: قم بإنشاء مهام جديدة وassignها إلى أعضاء فريقك.
-تتبع التقدم: تتبع تقدم المهام والوصول إلى أهدافك.
-التنظيم: تنظيم المهام حسب الأولوية والdeadlines.
-التواصل: التواصل مع أعضاء فريقك عبر نظام الرسائل.
-التقارير: قم بإنشاء تقارير دقيقة عن المهام والتقدم.
+Tafseel is a web-based task management application that helps you organize and prioritize your tasks, projects, and teams. With Tafseel, you can create and assign tasks, track progress, and collaborate with your team members.
 
-![](header.png)
+## Features
+------------
 
-## Installation
+### Task Management
 
+* Create and manage tasks with ease
+* Assign tasks to team members and track progress
+* Set deadlines and reminders for tasks
 
+### Team Collaboration
 
-## Usage example
+* Invite team members to collaborate on tasks and projects
+* Assign roles and permissions to team members
+* Track team performance and progress
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+### Reporting and Analytics
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+* Generate detailed reports on task progress and performance
+* Track team velocity and burndown rates
+* Identify bottlenecks and areas for improvement
 
-## Development setup
+## Getting Started
+-------------------
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+### Installation
 
-```sh
-make install
-npm test
-```
+1. Clone the repository: `git clone https://github.com/mgogah/Task-Management-App.git`
+2. Install dependencies: `npm install`
+3. Start the application: `npm start`
 
-## Release History
+### DB Configuration
 
-* 0.2.1
-    * CHANGE: Update docs (module code remains unchanged)
-* 0.2.0
-    * CHANGE: Remove `setDefaultXYZ()`
-    * ADD: Add `init()`
-* 0.1.1
-    * FIX: Crash when calling `baz()` (Thanks @GenerousContributorName!)
-* 0.1.0
-    * The first proper release
-    * CHANGE: Rename `foo()` to `bar()`
-* 0.0.1
-    * Work in progress
+* Tafseel uses SqLite by default so you don't need to install anything in your local machine
 
-## Meta
-
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
 
 ## Contributing
+---------------
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+Contributions are welcome! If you'd like to contribute to Tafseel, please follow these steps:
 
-<!-- Markdown link & img dfn's -->
-[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/datadog-metrics
-[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
-[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
-[wiki]: https://github.com/yourname/yourproject/wiki
+1. Fork the repository: `git fork https://github.com/mgogah/Task-Management-App.git`
+2. Create a new branch: `git checkout -b my-feature`
+3. Make your changes and commit them: `git commit -m "My feature"`
+4. Push your changes: `git push origin my-feature`
+5. Create a pull request: `git request-pull origin my-feature`
+
+## License
+---------
+
+Tafseel is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+## Authors
+-----------
+
+* [Your Name](https://github.com/mgogah)
+
+## Acknowledgments
+----------------
+Tafseel is a web app built with Laravel web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+We'd like to thank everyone who has contributed to Tafseel, and we hope to continue growing and improving the application.
+
+**Tafseel (تفصيل)**
+=====================
