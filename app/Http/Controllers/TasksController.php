@@ -28,7 +28,7 @@ class TasksController extends Controller
         ]);
     }
     
-    return redirect("login")->withSuccess('Please Login First');
+    return redirect("login")->withSuccess('الرجاء تسجيل الدخول');
 
     }
 
@@ -40,7 +40,7 @@ class TasksController extends Controller
         if (Auth::check()) {
         return view('tasks.create');
         }
-        return redirect("login")->withSuccess('Please Login First');
+        return redirect("login")->withSuccess('الرجاء تسجيل الدخول');
     }
 
     /**
@@ -50,7 +50,7 @@ class TasksController extends Controller
     {
         Tasks::create($request->validated());
 
-        return redirect()->route('tasks.index')->withSuccess('New Task is added successfully.');
+        return redirect()->route('tasks.index')->withSuccess('تم اضافة المهمة الجديدة بنجاح');
     }
 
     /**
@@ -77,7 +77,7 @@ class TasksController extends Controller
         $task->update($request->validated());
 
         return redirect()->back()
-                ->withSuccess('Task is updated successfully.');
+                ->withSuccess('تم تعديل المهمة بنجاح');
     }
 
     /**
@@ -88,6 +88,6 @@ class TasksController extends Controller
         $task->delete();
 
         return redirect()->route('tasks.index')
-                ->withSuccess('Task is deleted successfully.');
+                ->withSuccess('تم حذف المهمة بنجاح');
     }
 }

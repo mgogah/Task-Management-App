@@ -6,11 +6,11 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-header">
-                <div class="float-start">
-                    Edit Task
-                </div>
                 <div class="float-end">
-                    <a href="{{ route('tasks.index') }}" class="btn btn-primary btn-sm">&larr; Back</a>
+                    تعديل المهمة
+                </div>
+                <div class="float-start">
+                    <a href="{{ route('tasks.index') }}" class="btn btn-primary btn-sm">&larr; رجوع</a>
                 </div>
             </div>
             <div class="card-body">
@@ -24,7 +24,7 @@
                     @method("PUT")
 
                     <div class="mb-3 row">
-                        <label for="title" class="col-md-4 col-form-label text-md-end text-start">Title</label>
+                        <label for="title" class="col-md-1 col-form-label text-md-end text-end">العنوان</label>
                         <div class="col-md-6">
                           <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" name="title" value="{{  $task->title }}">
                             @error('title')
@@ -34,7 +34,7 @@
                     </div>
 
                      <div class="mb-3 row">
-                        <label for="description" class="col-md-4 col-form-label text-md-end text-start">Description</label>
+                        <label for="description" class="col-md-1 col-form-label text-md-end text-end">الوصف</label>
                         <div class="col-md-6">
                             <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description">{{ $task->description }}</textarea>
                             @error('description')
@@ -44,12 +44,12 @@
                     </div>
                     
                     <div class="mb-3 row">
-                        <label for="completed" class="col-md-4 col-form-label text-md-end text-start">Completed</label>
-                        <div class="col-md-6">
+                        <label for="completed" class="col-md-1 col-form-label text-md-end text-end">منجزة</label>
+                        <div class="col-md-3">
                           <select class="form-control @error('completed') is-invalid @enderror" id="completed" name="completed">
-                            <option value="">Please select..</option>
-                            <option value="1" {{ ( $task->completed) ? "selected" : ""}}>Yes</option>
-                            <option value="0" {{ ( $task->completed) ? "" : "selected"}}>No</option>
+                            <option value="">الرجاء الإختيار</option>
+                            <option value="1" {{ ( $task->completed) ? "selected" : ""}}>نعم</option>
+                            <option value="0" {{ ( $task->completed) ? "" : "selected"}}>لا</option>
                           </select>
                             @error('completed')
                                 <span class="text-danger">{{ $message }}</span>
@@ -59,9 +59,12 @@
 
 					
 					<div class="mb-3 row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-1">
                         <input type="hidden" name="user_id" value="{{ Auth::user()->id }}">
-                        <input type="submit" class="col-md-3 offset-md-5 btn btn-primary" value="Update Task">
+                        <input type="submit" class="offset-md-5 btn btn-primary" value="تعديل">
                     </div>
+                </div>
                     
                 </form>
             

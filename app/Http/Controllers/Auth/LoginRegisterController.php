@@ -45,7 +45,7 @@ class LoginRegisterController extends Controller implements HasMiddleware
         Auth::attempt($credentials);
         $request->session()->regenerate();
         return redirect()->route('home')
-            ->withSuccess('You have successfully registered & logged in!');
+            ->withSuccess('تم تسجيلك بنجاح!!');
     }
 
     public function login(): View
@@ -67,7 +67,7 @@ class LoginRegisterController extends Controller implements HasMiddleware
         }
 
         return back()->withErrors([
-            'email' => 'Your provided credentials do not match in our records.',
+            'email' => 'لم يتم العثور على بياناتك',
         ])->onlyInput('email');
 
     }
@@ -84,6 +84,6 @@ class LoginRegisterController extends Controller implements HasMiddleware
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         return redirect()->route('login')
-            ->withSuccess('You have logged out successfully!');
+            ->withSuccess('تم تسجيل خروجك بنجاح');
     }
 }
