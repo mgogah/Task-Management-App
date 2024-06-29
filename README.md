@@ -92,10 +92,10 @@ We'd like to thank everyone who has contributed to Tafseel, and we hope to conti
 
 **Tafseel (تفصيل)**
 =====================
-##تهيئة النظام
-*الرجاء تنصيب PHP 8.2+, composer, Git, npm قبل البدء في خطوات تشغيل التطبيق
+## تهيئة النظام
+* الرجاء تنصيب PHP 8.2+, composer, Git, npm قبل البدء في خطوات تشغيل التطبيق
 
-###خطوات التنصيب
+### خطوات التنصيب
 
 1. فتح موجه الاوامر CMD
 2. احضار ملفات التطبيق بالامر: `git clone https://github.com/mgogah/Task-Management-App.git`
