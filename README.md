@@ -33,16 +33,18 @@ Tafseel is a web-based task management application that helps you organize and p
 
 ## Getting Started
 -------------------
+* Please Make sure you have installed PHP 8.2+, composer, Git and npm in your local Machine first
+* Open Command Prompt and follow these installition steps.
 
-### Installation
+### Installation Steps:
 
 1. Clone the repository: `git clone https://github.com/mgogah/Task-Management-App.git`
-2. Enter to Task-Management-App folder
+2. Entering App folder: `cd Task-Management-App`
 3. Install Required packages: `composer install`
 4. Install dependencies: `npm install`
 5. Create .env file By Renaming .env.example to .env
 6. Generate key: `php artisan key:generate`
-7. Linking storage `php artisan storage:link`
+7. Linking storage: `php artisan storage:link`
 8. Creating DB: `php artisan migrate`
 9. Run the server: `php artisan serve`
 
@@ -90,3 +92,18 @@ We'd like to thank everyone who has contributed to Tafseel, and we hope to conti
 
 **Tafseel (تفصيل)**
 =====================
+##تهيئة النظام
+*الرجاء تنصيب PHP 8.2+, composer, Git, npm قبل البدء في خطوات تشغيل التطبيق
+
+###خطوات التنصيب
+
+1. فتح موجه الاوامر CMD
+2. احضار ملفات التطبيق بالامر: `git clone https://github.com/mgogah/Task-Management-App.git`
+3. الدخول لمجلد التطبيق بالامر: `cd Task-Management-App`
+4.  تنصيب باكجات التطبيق بالامر: `composer install`
+5. تنصيب مكتبات بالامر: `npm install`
+6. إعادة تسمية الملف .env.example الى .env
+7. إنشاء مفتاح خاص بالتطبيق: `php artisan key:generate`
+8. ربط مستودع التخزين: `php artisan storage:link`
+9. إنشاء قاعدة البيانات: `php artisan migrate`
+10. تشغيل التطبيق: `php artisan serve`

@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Noto Sans Arabic", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #333;
@@ -113,7 +113,7 @@ body {
 
 /* Features Styles */
 .features {
-    padding: 8rem 0;
+    padding: 1rem 0;
 }
 
 .features h2 {

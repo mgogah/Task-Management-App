@@ -2,88 +2,109 @@
 
 @section('content')
 <main>
-    <section class="hero">
-        <div class="container">
-            <h1>تفصيل التحكم في المهام</h1>
-            <p>مديرة وتنظيم وادارة المهام الخاصة بك</p>
-            <a href="#" class="btn btn-primary">ابدأ الاستخدام الآن</a>
+    <header class="py-5">
+        <div class="container px-lg-5">
+            <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                <div class="m-4 m-lg-5">
+                    <h1 class="display-5 fw-bold">تفصيل التحكم في المهام</h1>
+                    <p class="fs-4">مدير وتنظيم وادارة المهام الخاصة بك</p>
+                    <a class="btn btn-primary btn-lg" href="{{ route('register') }}">ابدأ الاستخدام الآن</a>
+                </div>
+            </div>
         </div>
-    </section>
+    </header>
 
-    <section class="features" id="features">
-        <div class="container">
-            <h2>مميزات تفصيل</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="icon">
-                            <i class="fas fa-list"></i>
+    <section class="pt-4">
+        <div class="container px-lg-5">
+            <!-- Page Features-->
+            <div class="row gx-lg-5">
+                <div class="col-lg-12 col-xxl-4 mb-5">
+                    <div class="card border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <h1 class="fs-4 fw-bold">مميزات تفصيل</h1>
                         </div>
-                        <h3>التنظيم</h3>
-                        <p>تنظيم المهام الخاصة بك والتقليل من التأخيرات</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="icon">
-                            <i class="fas fa-tags"></i>
+            </div>
+            <div class="row gx-lg-5">
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class=""><i class="bi bi-collection"></i></div>
+                            <h2 class="fs-4 fw-bold">التنظيم</h2>
+                            <p class="mb-0">تنظيم المهام الخاصة بك والتقليل من التأخيرات</p>
                         </div>
-                        <h3>التصنيف</h3>
-                        <p>تصنيف المهام حسب الأهداف والمواقف الحالية</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="icon">
-                            <i class="fas fa-calendar-alt"></i>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class=""><i class="bi bi-cloud-download"></i></div>
+                            <h2 class="fs-4 fw-bold">التصنيف</h2>
+                            <p class="mb-0">تصنيف المهام حسب الأهداف والمواقف الحالية</p>
                         </div>
-                        <h3>التواريخ</h3>
-                        <p>تحديد المهلة النهاية لكل مهمة والحصول على تنبيهات</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="icon">
-                            <i class="fas fa-sort-amount-up"></i>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class=""><i class="bi bi-card-heading"></i></div>
+                            <h2 class="fs-4 fw-bold">التواريخ</h2>
+                            <p class="mb-0">تحديد المهلة النهاية لكل مهمة والحصول على تنبيهات</p>
                         </div>
-                        <h3>الترتيب</h3>
-                        <p>ترتيب المهام حسب الأهمية والأولوية</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="icon">
-                            <i class="fas fa-lock"></i>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class=""><i class="bi bi-bootstrap"></i></div>
+                            <h2 class="fs-4 fw-bold">الترتيب</h2>
+                            <p class="mb-0">ترتيب المهام حسب الأهمية والأولوية</p>
                         </div>
-                        <h3>التحكم في الوصول</h3>
-                        <p>إدارة الوصول للمهام والمستخدمين</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-card">
-                        <div class="icon">
-                            <i class="fas fa-bell"></i>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class=""><i class="bi bi-code"></i></div>
+                            <h2 class="fs-4 fw-bold">التحكم في الوصول</h2>
+                            <p class="mb-0">إدارة الوصول للمهام والمستخدمين</p>
                         </div>
-                        <h3>التنبيهات</h3>
-                        <p>تحديد التنبيهات عند تجاوز المهلة أو الإضافة للمهام</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 mb-5">
+                    <div class="card bg-light border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <div class=""><i class="bi bi-patch-check"></i></div>
+                            <h2 class="fs-4 fw-bold">التنبيهات</h2>
+                            <p class="mb-0">تحديد التنبيهات عند تجاوز المهلة أو الإضافة للمهام</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <h2>التسعير</h2>
-            <div class="row">
-                <div class="col-md-4">
+    <section class="pt-4" id="pricing">
+        <div class="container px-lg-5">
+            <div class="row gx-lg-5">
+                <div class="col-lg-12 col-xxl-4 mb-5">
+                    <div class="card border-0 h-100">
+                        <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                            <h1 class="fs-3 fw-bold">التسعير</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-lg-5">
+                <div class="col-md-4 bg-light mb-5 p-5">
                     <div class="pricing-card">
                         <div class="header">
-                            <h3>البسيط</h3>
+                            <h3 class="text-warning">البسيط</h3>
                             <p>بداية ممتازة</p>
                         </div>
                         <div class="price">
-                            <span>مجاني</span>
+                            <span class="text-warning">مجاني</span>
                         </div>
                         <div class="features">
                             <ul>
@@ -93,18 +114,18 @@
                             </ul>
                         </div>
                         <div class="button">
-                            <a href="#" class="btn btn-primary">اشترِ الآن</a>
+                            <a href="{{ route('register') }}" class="btn btn-warning">اشترِ الآن</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 bg-light mb-5 p-5">
                     <div class="pricing-card">
                         <div class="header">
-                            <h3>المتوسط</h3>
+                            <h3 class="text-info">المتوسط</h3>
                             <p>حل كامل للمهام</p>
                         </div>
                         <div class="price">
-                            <span>10 ريال شهريًا</span>
+                            <span class="text-info">10 ريال شهريًا</span>
                         </div>
                         <div class="features">
                             <ul>
@@ -114,18 +135,18 @@
                             </ul>
                         </div>
                         <div class="button">
-                            <a href="#" class="btn btn-primary">اشترِ الآن</a>
+                            <a href="{{ route('register') }}" class="btn btn-info">اشترِ الآن</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 bg-light mb-5 p-5">
                     <div class="pricing-card">
                         <div class="header">
-                            <h3>المتقدم</h3>
+                            <h3 class="text-success">المتقدم</h3>
                             <p>تنظيم المهام بشكل تفصيلي</p>
                         </div>
                         <div class="price">
-                            <span>20 ريال شهريًا</span>
+                            <span class="text-success">20 ريال شهريًا</span>
                         </div>
                         <div class="features">
                             <ul>
@@ -135,7 +156,7 @@
                             </ul>
                         </div>
                         <div class="button">
-                            <a href="#" class="btn btn-primary">اشترِ الآن</a>
+                            <a href="{{ route('register') }}" class="btn btn-success">اشترِ الآن</a>
                         </div>
                     </div>
                 </div>
