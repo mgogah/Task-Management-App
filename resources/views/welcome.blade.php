@@ -91,7 +91,7 @@
                 <div class="col-lg-12 col-xxl-4 mb-5">
                     <div class="card border-0 h-100">
                         <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
-                            <h1 class="fs-3 fw-bold">التسعير</h1>
+                            <h1 class="fs-3 fw-bold">اشتراكاتنا</h1>
                         </div>
                     </div>
                 </div>
