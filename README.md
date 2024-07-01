@@ -52,7 +52,6 @@ Tafseel is a web-based task management application that helps you organize and p
 
 * Tafseel uses SqLite by default so you don't need to install anything in your local machine
 
-
 ## Contributing
 ---------------
 
